@@ -4,10 +4,7 @@ import com.example.mscourse.msproducto.models.dao.ProductoDao;
 import com.example.mscourse.msproducto.models.entity.Producto;
 import com.example.mscourse.msproducto.models.service.IProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Mapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,6 +16,7 @@ public class ProductoController {
 
     @GetMapping("/listar")
     public List<Producto> listar(){
+        System.out.println("consultado");
         return productoService.findAll();
     }
 
