@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 //@EnableEurekaClient en esta version ya no es soportado
+//con la dependencia de eureka es suficiente
 @SpringBootApplication
 public class MsproductoApplication {
 
